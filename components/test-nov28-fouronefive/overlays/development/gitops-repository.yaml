@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: test-nov28-fouronefive-gitops-repository
+spec:
+  url: https://github.com/jdubrick-ai/test-nov28-fouronefive-gitops

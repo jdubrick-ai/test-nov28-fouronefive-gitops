@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: test-nov28-fouronefive-gitops
+  description: This is GitOps manifest for test-nov28-fouronefive   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: test-nov28-fouronefive
+    janus-idp.io/tekton: test-nov28-fouronefive 
+    backstage.io/kubernetes-id: test-nov28-fouronefive 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:test-nov28-fouronefive

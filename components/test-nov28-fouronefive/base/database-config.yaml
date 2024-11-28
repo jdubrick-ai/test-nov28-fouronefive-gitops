@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: test-nov28-fouronefive-database-config
+data:
+  VECTORDB_HOST: "test-nov28-fouronefive-database"
+  VECTORDB_PORT: ""
